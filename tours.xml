@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tours>
+  <tour>
+    <name>Горнолыжный тур</name>
+    <price>1000 евро</price>
+    <duration>7 дней</duration>
+  </tour>
+  <tour>
+    <name>Пешеходный тур</name>
+    <price>500 евро</price>
+    <duration>5 дней</duration>
+  </tour>
+  <tour>
+    <name>Тур по озерам</name>
+    <price>700 евро</price>
+    <duration>3 дня</duration>
+  </tour>
+  <tour>
+    <name>Тур по окраинам города</name>
+    <price>700 евро</price>
+    <duration>3 дня</duration>
+  </tour>
+</tours>

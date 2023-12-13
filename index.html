@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Заявки на поездку в Швейцарию</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="js/bom.js"></script>
+  <style>
+    /* Объединенные и добавленные стили */
+    h1 {
+      color: rgb(20, 162, 117);
+      font-size: 36px;
+    }
+
+    a.header_mr {
+      color: rgb(34, 116, 149);
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 16px;
+      color: black;
+    }
+
+    .form {
+      margin-top: 20px;
+    }
+
+    .i1 {
+      width: 1180px;
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .i11 {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: blue;
+      color: white;
+      font-weight: bold;
+    }
+
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th,
+    td {
+      border: 1px solid black;
+      padding: 10px;
+    }
+
+    /* Объединенные стили для div.text */
+    div.text {
+      border: 1px solid #ccc;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.7);
+      font-family: Times New Roman;
+      font-size: 14px;
+      line-height: 1.5;
+      letter-spacing: 0.05em;
+      font-weight: 400;
+      color: #333;
+      position: relative;
+      z-index: 2;
+      backdrop-filter: blur(1px);
+    }
+
+    /* Анимация для SVG */
+    .svg-animation {
+      width: 30px;
+      height: 30px;
+      animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Фон -->
+  <div id="header" class="background">
+    <img src="images/switzerland1.jpg" alt="Швейцария" class="bottom-image">
+    <ul class="header_menu">
+      <li><a href="#">Туры</a></li>
+      <li><a href="#">Цены</a></li>
+      <li><a href="#">Контакты</a></li>
+      <li><a href="#">О нас</a></li>
+      <li><a href="C:\Users\Photenix\Desktop\tour сайт до пт сделать\site\nav.html">Перенос на резервный сайт</a></li>
+    </ul>
+    <h1>Заявки на поездку в Швейцарию</h1>
+  </div>
+ 
+
+  <!-- Текст -->
+  <div class="bgtxt">
+    <div class="text">
+      <p><strong><a href="#header">Швейцария</a></strong> - это страна, расположенная в Западной Европе. Она известна своими горными пейзажами, живописными озерами и историческими городами.</p>
+      <p>Если вы хотите отправиться в незабываемое путешествие, то Швейцария - это отличный выбор. Здесь вы сможете насладиться красотой природы, познакомиться с богатой историей и культурой страны.
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="svg-animation float-left">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 15L12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9" />
+        </svg>
+      </p>
+      <style>
+        div.text::first-letter {
+          font-size: 18pt;
+        }  
+      </style>
+      <img src="images/obtekanie.jpg" alt="Обтекание изображения" class="float-left" style="box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.563);">
+      <p>Чтобы подать заявку на поездку в Швейцарию, заполните форму ниже.</p>
+      <div class="image-container">
+      </div>
+  
+      <!-- Форма заявки -->
+      <form action="index.php" method="post">
+        <div class="form">
+          <input type="text" name="name" placeholder="Ваше имя" class="i1">
+          <input type="email" name="email" placeholder="Ваш email" class="i1">
+          <input type="date" name="date" placeholder="Дата поездки" class="i1"> 
+          <input type="text" name="country" placeholder="Страна проживания" class="i1">
+          <input type="text" name="birthdate" placeholder="Год рождения" class="i1">
+          <input type="submit" value="Отправить заявку" class="i11">
+        </div>
+      </form>
+  
+      <!-- Таблица -->
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Название</th>
+            <th>Цена</th>
+            <th>Длительность</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Горнолыжный тур</td>
+            <td>1000 евро</td>
+            <td>7 дней</td>
+          </tr>
+          <tr>
+            <td>Тур по озерам</td>
+            <td>800 евро</td>
+            <td>5 дней</td>
+          </tr>
+          <tr>
+            <td>Экскурсия в Альпы</td>
+            <td>1200 евро</td>
+            <td>10 дней</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Подвал -->
+  <footer class="footer">
+    <div class="footer_content">
+      <p>Контакты: <a href="tel:+123456789">+1 (234) 567-89-00</a></p>
+      <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+    </div>
+  </footer>
+</body>
+</html>
