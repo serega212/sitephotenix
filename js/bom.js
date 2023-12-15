@@ -1,10 +1,10 @@
-// Ждем полной загрузки DOM
+// Ждем полной загрузки DOM 
 document.addEventListener("DOMContentLoaded", function () {
     const text = "Some text to split";
     const words = text.split(' ');
     const length = words.length;
   
-    // Вывести количество слов в теге
+    // Вывести количество слов в теге 
     console.log(length);
   
     const table = document.querySelector('table');
@@ -26,16 +26,18 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       console.error('Таблица не найдена');
     }
-  
+  // Изменение структуры HTML с использованием JS 2зч4
     const p = document.createElement('p');
     p.textContent = 'Это новый абзац';
     document.body.appendChild(p);
   
-    // Используйте jQuery для удобства
+    // Используйте jQuery для удобства 2зч2
     $(document).ready(function() {
-      $('h1').css('color', 'red');
+      $('h1').css('color', 'blue`');
       $('input[type="submit"]').val('Отправить заявку с помощью jQuery');
       $('.form').hide();
+
+      $('.form').fadeIn(1000);
       $('input[type="submit"]').click(function() {
         alert('Кнопка отправки заявки была нажата!');
       });
@@ -78,9 +80,6 @@ document.addEventListener("DOMContentLoaded", function () {
   
     // Пример: отобразить данные в виде списка
     $("body").append("<ul>");
-    // Здесь должна быть логика для обработки данных туров, но массив tours не определен в вашем коде
-    // Допустим, что у вас есть массив tours, и вы хотите отобразить его содержимое в виде списка
-    // Пример: tours.forEach(function(tour) { $("ul").append("<li>" + tour.name + "</li>"); });
     $("body").append("</ul>");
   });
   
