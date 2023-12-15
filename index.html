@@ -7,6 +7,10 @@
   <link rel="shortcut icon" href="images/favicon.ico">
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="js/bom.js"></script>
+  <script src="jquery-ui-1.13.2.custom/jquery-ui.min.js"></script>
+  <script src="jquery-ui-1.13.2.custom/jquery-ui.js"></script>
+  <script src="jquery-ui-1.13.2.custom/jquery-ui.css"></script>
+
   <style>
     /* Объединенные и добавленные стили */
     h1 {
@@ -72,7 +76,14 @@
       z-index: 2;
       backdrop-filter: blur(1px);
     }
-
+     /* стиль плагина */
+    .dialog_window{
+      color: white;
+      border: 2px #333 solid;
+    }
+    .dialog_window > p {
+      color: white;
+    }
     /* Анимация для SVG */
     .svg-animation {
       width: 30px;
@@ -135,6 +146,12 @@
           <input type="submit" value="Отправить заявку" class="i11">
         </div>
       </form>
+      <div id="dialog_window_1" class="dialog_window" title="">
+        <input type="text" style="width:200px" placeholder="Введите ваше имя">
+        <p>приветствуем!</p>
+        <button type="submit">Отправить</button>
+
+      </div>
   
       <!-- Таблица -->
       <table class="table">
@@ -173,5 +190,20 @@
       <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
     </div>
   </footer>
+  <!-- Добавленный jQuery код 2з1ч -->
+  <script>
+    $(document).ready(function() {
+      // Пример: скрыть абзац при клике 2з5ч
+      $("p").click(function() {
+        $(this).hide();
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function() {
+      $('#dialog_window_1').dialog();
+    });
+   
+  </script>
 </body>
 </html>
